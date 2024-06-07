@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "UbuntuLight";
+    src: url("../fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+    font-family: "UbuntuMedium";
+    src: url("../fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+    font-family: "UbuntuRegular";
+    src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+/* ! ======== General Styling =========*/
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btnExplore {
+    font-family: "UbuntuMedium";
+    background-color: #dfaa5b;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1% 5%;
+    cursor: pointer;
+}
+
+.btnGallery {
+    font-family: "UbuntuMedium";
+    background-color: #dfaa5b;
+    color: white;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    border: none;
+    border-radius: 10px;
+    padding: 2% 2%;
+    width: 50%;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "UbuntuMedium";
+    color: #957554;
+    font-size: clamp(3rem, 4vw, 4.8rem);
+    margin-bottom: 15vh;
+}
+
+/* ! ================= Heeader ================= */
+header {
+    background-color: white;
+    padding: 3% 5%;
+    text-align: center;
+    font-family: "UbuntuMedium";
+}
+
+header .headerLogo {
+    margin-bottom: 5%;
+}
+
+header nav {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav div a {
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    color: #957554;
+}
+
+header nav img {
+    width: 25px;
+}
+
+
+/* ! ====== Section mit Backgroundpicture ====== */
+.bcgSection {
+    background-image: url("../img/bgImages/bgHero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 20% 0;
+    margin-bottom: 10vh;
+
+}
+
+h1 {
+    font-family: "UbuntuRegular";
+    font-size: clamp(2rem, 3.5vw, 8rem);
+    margin-bottom: 2%;
+}
+
+.bcgSection p {
+    font-family: "UbuntuMedium";
+    font-size: clamp(1rem, 2vw, 4rem);
+    margin-bottom: 6%;
+}
+
+/* ! =========== Section Facilities =========== */
+.facilities {
+    text-align: center;
+    padding-bottom: 20vh;
+}
+
+.facilities article {
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.facilities article div p {
+    color: #957554;
+    font-family: "UbuntuRegular";
+    font-size: clamp(2rem, 2vw, 2rem);
+}
+
+/* ! ========= Section Rooms & Rates ========= */
+.rooms {
+    text-align: center;
+    padding: 0 0 10% 0;
+}
+
+.rooms article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2% 2%;
+}
+
+.rooms article div {
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    flex-direction: column;
+    border-radius: 10px;
+    color: white;
+    padding: 10% 2% 5% 2%;
+    margin-bottom: 2%;
+}
+
+.rooms div:nth-of-type(1) {
+    background-image: url("../img/gallery/galleryBedroomTwin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rooms div:nth-of-type(2) {
+    background-image: url("../img/gallery/galleryBedroomLamp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rooms div:nth-of-type(3) {
+    background-image: url("../img/gallery/galleryBedroomView.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rooms div:nth-of-type(4) {
+    background-image: url("../img/gallery/galleryBedroom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rooms div p {
+    font-family: "UbuntuMedium";
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    margin-bottom: 4%;
+}
+
+
+/* ! ========= Section Get a room ========= */
+.getRoom {
+    text-align: center;
+    padding: 0 0 10% 0;
+
+}
+
+.getRoom h2 {
+    margin-bottom: 5vh;
+}
+
+
+/* ! =============== Footer ================ */
+footer {
+    background-color: #111111;
+    color: white;
+    padding: 5%;
+}
+
+footer article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer article div:nth-of-type(1) p {
+    line-height: 30px;
+}
+
+footer article div:nth-of-type(1) p:nth-of-type(1) {
+    font-family: "UbuntuMedium";
+    font-size: clamp(2rem, 2vw, 2rem);
+    margin-top: 20%;
+}
+
+footer article div:nth-of-type(1) p:nth-of-type(2),
+footer article div:nth-of-type(1) p:nth-of-type(3) {
+    font-family: "UbuntuLight";
+    font-size: clamp(2rem, 2vw, 2rem);
+}
+
+footer article div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer article div:nth-of-type(2) a {
+    font-size: clamp(2rem, 2vw, 2rem);
+    color: white;
+    text-decoration: none;
+    font-family: "UbuntuRegular";
+}
+
+footer article div:nth-of-type(3) h3 {
+    font-family: "UbuntuMedium";
+    font-size: clamp(1rem, 2vw, 3rem);
+    margin-bottom: 5%;
+}
+
+footer article div:nth-of-type(3) input {
+    border: none;
+    border-radius: 10px;
+    padding: 5% 35% 5% 10%;
+    margin-bottom: 10%;
+}
+
+footer article div:nth-of-type(3) button {
+    padding: 5% 10%;
+}
